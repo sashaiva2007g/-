@@ -1,0 +1,10 @@
+a = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
+l = -1
+r = len(a)
+while r - l > 1:
+    mid = (r + l)//2
+    if a[mid] == 1:
+        r = mid
+    else:
+        l = mid
+print(a, f'Индексы 0, 1: a[{l}], a[{r}]')
